@@ -12,12 +12,12 @@ export const LoginScreen = ({ localize, loginAction }) => {
   }, [password, username]);
 
   return (
-    <ScrollView
-      bounces={false}
-      showsVerticalScrollIndicator={false}
-      keyboardShouldPersistTaps="handled"
-    >
-      <ScreenContainer style={styles.container}>
+    <ScreenContainer style={styles.container}>
+      <ScrollView
+        bounces={false}
+        showsVerticalScrollIndicator={false}
+        keyboardShouldPersistTaps="handled"
+      >
         <View style={styles.textInputContainer}>
           <TextInput
             placeholder={defaultLocalize("login.username", localize)}
@@ -38,8 +38,8 @@ export const LoginScreen = ({ localize, loginAction }) => {
           title={defaultLocalize("login.loginButton", localize)}
           onPress={handleUserLogin}
         />
-      </ScreenContainer>
-    </ScrollView>
+      </ScrollView>
+    </ScreenContainer>
   );
 };
 
