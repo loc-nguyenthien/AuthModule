@@ -1,0 +1,12 @@
+{
+  "name": "AuthModule",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:loc-nguyenthien/AuthModule.git",
+  "author": "Loc NguyenThien <loc.nguyent@saigontechnology.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "react": "^18.2.0",
+    "react-native": "^0.72.4"
+  }
+}
