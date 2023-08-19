@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from "react";
 import { ScrollView, StyleSheet, View, TextInput } from "react-native";
-import { AuthMetrics, defaultLocalize } from "../index";
+import { defaultLocalize, metrics } from "../index";
 import { Button, ScreenContainer } from "../components";
 
 export const LoginScreen = ({ localize, loginAction }) => {
@@ -51,15 +51,15 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   textInput: {
-    marginVertical: AuthMetrics.metrics.xs,
-    paddingTop: AuthMetrics.metrics.large,
+    marginVertical: metrics.xs,
+    paddingTop: metrics.large,
   },
   loginButton: {
     alignSelf: "center",
-    width: AuthMetrics.metrics.textInputWidth,
-    marginTop: AuthMetrics.metrics.small,
+    width: metrics.textInputWidth,
+    marginTop: metrics.small,
   },
   forgotPassword: {
-    marginVertical: AuthMetrics.metrics.medium,
+    marginVertical: metrics.medium,
   },
 });
