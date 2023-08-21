@@ -1,7 +1,7 @@
 import React, { useCallback, useState } from "react";
 import { ScrollView, StyleSheet, View, TextInput } from "react-native";
 import { defaultLocalize, metrics } from "../index";
-import { Button, ScreenContainer } from "../components";
+import { Button, ScreenContainer, TextInputView } from "../components";
 
 export const LoginScreen = ({ localize, loginAction }) => {
   const [username, setUsername] = useState("name@gmail.com");
@@ -19,13 +19,13 @@ export const LoginScreen = ({ localize, loginAction }) => {
         keyboardShouldPersistTaps="handled"
       >
         <View style={styles.textInputContainer}>
-          <TextInput
+          <TextInputView
             placeholder={defaultLocalize("login.username", localize)}
             onChangeText={setUsername}
             value={username}
             autoFocus
           />
-          <TextInput
+          <TextInputView
             placeholder={defaultLocalize("login.password", localize)}
             onChangeText={setPassword}
             value={password}
